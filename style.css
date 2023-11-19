@@ -1,0 +1,253 @@
+.logo img {
+    float: left;
+    padding-left: 30px;
+}
+
+nav {
+    background-color: #5a81fa;
+    overflow: hidden;
+}
+
+nav a {
+    float: left;
+    color: rgb(0, 0, 0);
+    padding: 35px 80px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+nav a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.search-container {
+    position: relative;
+}
+
+.search-icon {
+    position: absolute;
+    height: 30px; 
+    margin-top: 33px;
+    padding: 3px;
+    margin-left: 205px; 
+}
+
+.search-input {
+    flex: 1;
+    margin-left: 50px;
+    padding: 17px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 25px;
+}
+
+.button a:hover {
+    color: #000000;
+}
+
+.btn1 {
+    border: 1px solid #000000;
+    padding: 10px 35px;
+    color: #5a81fa;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 25px;
+    margin-right: 45px;
+    float: right;
+    background-color: #ffffff;
+}
+
+.trending {
+    float: left;
+    margin-top: 15px;
+    margin-left: 40px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.trending a {
+   background-color: #000000;
+   color: #ffffff;
+   text-decoration: none;
+   font-weight: bold;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 30px;
+   padding: 7px;
+}
+
+.timnas {
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+.timnas a {
+    margin-bottom: 30px;
+    margin-left: 80px;
+    color: rgb(126, 126, 126);
+    text-decoration: none;
+}
+
+.u17 {
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+.u17 a {
+    margin-bottom: 30px;
+    margin-left: 100px;
+    color: rgb(126, 126, 126);
+    text-decoration: none;
+}
+
+.voli {
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+.voli a {
+    margin-bottom: 30px;
+    margin-left: 120px;
+    color: rgb(126, 126, 126);
+    text-decoration: none;
+}
+
+.slideshow-container {
+    position: relative;
+    margin: auto;
+}
+
+.slides {
+    display: inline;
+}
+
+.slide {
+    width: 100%;
+    height: auto;
+}
+
+h5 {
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    font-size: 50px;
+    color: #ffffff;
+    right: 5%;
+    top: 20%; 
+    left: 35%;
+}
+
+h6 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    font-weight: normal;
+    font-size: 20px;
+    color: #ffffff;
+    right: 5%;
+    top: 40%; 
+    left: 35%;
+}
+
+p a {
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    font-weight: bold;
+    font-size: 20px;
+    color: #ffffff;
+    right: 5%;
+    top: 53%; 
+    left: 35%;
+    text-decoration: none;
+}
+
+.berita {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: #ffffff;
+    border-bottom: 10px solid #5a81fa;
+    margin-left: 40px;
+}
+
+.berita1 {
+    margin-top: 30px;
+    width: 190px;
+    padding-left: 10px;
+    padding-top: 5px;
+    background-color: #5a81fa;
+}
+
+.gambar2 {
+    margin-top: 30px;
+    margin-left: 40px;
+    padding-right: 20px;
+}
+
+.date-time-container {
+    margin-left: 40px;
+    display: flex;
+    gap: 5px;
+    color: #5a81fa;
+}
+
+.bola1 {    
+    margin-top: 10px;
+    width: 30px;
+    padding: 5px 5px 5px 5px;
+    background-color: #2c3d8f;
+    color: #ffffff;
+}
+
+.news {
+    margin-top: -40px;
+    margin-left: 40px;
+    margin-right: 750px;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+.gambar3 {
+    margin-top: -55%;
+    float: right;
+    transform: scale(0.4);
+    margin-right: 12%;
+}
+
+.date-time-container0 {
+    margin-top: -47%;
+    margin-right: 6%;
+    float: right;
+    display: flex;
+    gap: 5px;
+    color: #5a81fa;
+}
+
+.bola3 {    
+    margin-top: 10px;
+    width: 30px;
+    padding: 5px 5px 5px 5px;
+    background-color: #2c3d8f;
+    color: #ffffff;
+}
+
+.news2 {
+    float: right;
+    width: 270px;
+    height: 270px;
+    text-align: justify;
+    margin-top: -43%;
+    margin-right: 6%;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
