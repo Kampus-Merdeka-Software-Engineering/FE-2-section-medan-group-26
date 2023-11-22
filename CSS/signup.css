@@ -3,7 +3,7 @@ body {
   font-family: Inter;
 }
 
-.login-container {
+.signup-container {
   width: 450px;
   padding: 25px;
   background-color: #fff;
@@ -17,6 +17,12 @@ h1 {
   margin-bottom: 25px;
   color: #2c3d8f;
 }
+
+/* #login-form{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+} */
 
 .input-field {
   margin-bottom: 20px;
@@ -36,16 +42,16 @@ input {
   position: relative;
 }
 
-.remember-me {
+.agree {
   margin-bottom: 20px;
   margin-right: 20px;
-  justify-content: flex-start; 
-  align-items: center; 
-  gap: 14px; 
+  justify-content: flex-start;
+  align-items: center;
+  gap: 14px;
   display: inline-flex;
 }
 
-.remember-me input{
+.agree input {
   width: auto;
 }
 
@@ -65,23 +71,23 @@ button:hover {
   background-color: #5a81fa;
 }
 
-.signup-link {
+.login-link {
   text-align: center;
   margin-top: 20px;
 }
 
-.signup-link a {
+.login-link a {
   color: #5a81fa;
   text-decoration: none;
 }
 
-.signup-link a:hover {
+.login-link a:hover {
   text-decoration: underline;
 }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
-  .login-container {
+  .signup-container {
     width: 100%;
     padding: 25px;
     margin: 50px auto;
