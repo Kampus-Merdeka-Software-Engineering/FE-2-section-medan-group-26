@@ -1,0 +1,174 @@
+body {
+  font-family: Inter;
+}
+
+.above {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  align-items: center;
+  justify-content: center;
+  grid-column-gap: 70px;
+  margin-bottom: 50px;
+}
+
+.description {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.logo {
+  grid-area: 1 / 1 / 2 / 2;
+  animation: logo 1s ease 0s 1 normal backwards;
+}
+
+@keyframes logo {
+  0% {
+    opacity: 0;
+    transform: translateX(-250px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+h1 {
+  color: #2c3d8f;
+  font-size: xx-large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.line {
+  border-color: #000000;
+  border-style: solid;
+}
+
+p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+mark {
+  background-color: #cddeff;
+  color: #5a81fa;
+}
+
+.p4 {
+  color: #5a81fa;
+  font-weight: bold;
+}
+
+.middle {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.face {
+  padding: 20px;
+  line-height: 0.8;
+  color: #2c3d8f;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.middle .line {
+  width: 85%;
+}
+
+.team {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  /* grid-template-columns: repeat(4, 1fr); */
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 80px;
+  justify-content: center;
+}
+
+.team-member1 {
+  grid-area: 1 / 1 / 2 / 2;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+.team-member2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.team-member3 {
+  grid-area: 1 / 3 / 2 / 4;
+}
+.team-member4 {
+  grid-area: 1 / 4 / 2 / 5;
+}
+.team-member5 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.team-member6 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+.team-member7 {
+  grid-area: 2 / 3 / 3 / 4;
+}
+.team-member8 {
+  grid-area: 2 / 4 / 3 / 5;
+}
+
+.circle-wrapper {
+  width: 100px; /* Sesuaikan ukuran */
+  height: 100px; /* Sesuaikan ukuran */
+  border-radius: 50%;
+  overflow: hidden; /* Untuk menutupi apa yang tidak sesuai */
+  position: relative; /* Memungkinkan child div untuk berada di atasnya */
+}
+
+.circle-mask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
+  mask-image: radial-gradient(circle, white, black);
+}
+
+.circle-mask .photo {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .team-member1 {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .team-member2 {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  .team-member3 {
+    grid-area: 1 / 3 / 2 / 4;
+  }
+  .team-member4 {
+    grid-area: 1 / 4 / 2 / 5;
+  }
+  .team-member5 {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  .team-member6 {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+  .team-member7 {
+    grid-area: 2 / 3 / 3 / 4;
+  }
+  .team-member8 {
+    grid-area: 2 / 4 / 3 / 5;
+  }
+}
+
+/* 
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+} */
