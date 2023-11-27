@@ -1,0 +1,1 @@
+// File untuk keseluruhan page (taruh aja js untuk page index.html disini)

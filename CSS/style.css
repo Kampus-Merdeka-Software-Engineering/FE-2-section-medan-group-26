@@ -26,7 +26,7 @@ body, html {
 
 /* Tampilan Berita */
 .container {
-    background-image: url("../gambar/g6.jpg");
+    background-image: url("../assets/g6.jpg");
     height: 100%;
     display: flex;
     justify-content: center;
