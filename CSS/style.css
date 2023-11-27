@@ -19,23 +19,66 @@ main {
     padding: 5px 5px 5px 5px;
 }
 
-body, html {
-    height: 100%;
-}
-  
 
 /* Tampilan Berita */
+/* Styling dasar */
 .container {
-    background-image: url("../assets/g6.jpg");
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative; /* Membuat konten dalam posisi relatif */
+    overflow: hidden; /* Menghindari gambar keluar dari container */
+    z-index: -1;
 }
 
+.trending1 {
+    position: relative;
+    text-align: center;
+}
 
-@media all and (min-width:700px) {
-    .container {
-        padding: 5px 10px;
+.trending1 img {
+    width: 100%; /* Lebar gambar mencapai 100% lebar parent */
+    height: auto; /* Menjaga aspek rasio gambar */
+    display: block;
+    margin: 0 auto; /* Memposisikan gambar di tengah */
+}
+
+/* Mengatur teks agar berada di tengah gambar */
+.poin1, .poin2 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: white;
+    text-align: center;
+    width: 80%;
+}
+
+.poin1 {
+    font-size: 30px; /* Ukuran font untuk layar umum */
+}
+
+.poin2 {
+    font-size: 18px; /* Ukuran font untuk layar umum */
+    top: 60%; /* Posisi top untuk poin2 */
+}
+
+/* Media query untuk layar dengan lebar minimal 700px */
+@media screen and (min-width: 700px) {
+    .poin1 {
+        font-size: 50px;
+    }
+    .poin2 {
+        font-size: 25px;
+        top: 70%; /* Posisi top untuk poin2 pada layar yang lebih besar */
     }
 }
+
+@media screen and (max-width: 500px){
+    .poin1 {
+        font-size: 20px;
+    }
+    .poin2 {
+        font-size: 10px;
+        top: 60%; /* Posisi top untuk poin2 pada layar yang lebih besar */
+    }
+}
+
