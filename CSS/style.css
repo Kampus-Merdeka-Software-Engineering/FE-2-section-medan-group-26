@@ -41,24 +41,29 @@ main {
 }
 
 /* Mengatur teks agar berada di tengah gambar */
-.poin1, .poin2 {
+.poin1, .poin2, .poin3 {
     position: absolute;
-    top: 40%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1;
     color: white;
     text-align: center;
     width: 80%;
 }
 
 .poin1 {
-    font-size: 30px; /* Ukuran font untuk layar umum */
+    font-size: 20px; /* Ukuran font untuk layar umum */
 }
 
 .poin2 {
-    font-size: 18px; /* Ukuran font untuk layar umum */
+    font-size: 10px; /* Ukuran font untuk layar umum */
     top: 60%; /* Posisi top untuk poin2 */
+}
+
+.poin3 {
+    font-size: 8px;
+    top: 70%;
+
 }
 
 /* Media query untuk layar dengan lebar minimal 700px */
@@ -68,17 +73,26 @@ main {
     }
     .poin2 {
         font-size: 25px;
-        top: 70%; /* Posisi top untuk poin2 pada layar yang lebih besar */
+        top: 60%; /* Posisi top untuk poin2 pada layar yang lebih besar */
+    }
+    .poin3 {
+        font-size: 15px;
+        top: 75%;
     }
 }
 
 @media screen and (max-width: 500px){
     .poin1 {
-        font-size: 20px;
+        font-size: 20px; /* Ukuran font untuk layar umum */
     }
+    
     .poin2 {
-        font-size: 10px;
-        top: 60%; /* Posisi top untuk poin2 pada layar yang lebih besar */
+        font-size: 10px; /* Ukuran font untuk layar umum */
+        top: 60%; /* Posisi top untuk poin2 */
+    }
+    
+    .poin3 {
+        font-size: 8px;
+        top: 70%;
     }
 }
-

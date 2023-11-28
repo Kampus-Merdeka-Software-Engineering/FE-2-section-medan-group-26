@@ -135,6 +135,7 @@ nav ul a:hover {
   max-width: 200px;
   background-color: #5a81fa;
   margin-left: 297px;
+  z-index: 1;
 }
 
 .mobile nav,
