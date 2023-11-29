@@ -172,3 +172,30 @@ mark {
     grid-area: 8 / 1 / 8 / 1;
   }
 }
+
+/* Sidebar */
+.mobile {
+  position: absolute;
+  top: 120px;
+  width: 100%;
+  max-width: 200px;
+  background-color: #5a81fa;
+  margin-left: 297px;
+  z-index: 1;
+}
+
+.mobile nav,
+.mobile nav ul {
+  gap: 30px;
+  flex-direction: column;
+}
+
+.hidden {
+  display: none;
+}
+
+@media all and (min-width:700px) {
+  .mobile {
+    display: none;
+  }
+}
