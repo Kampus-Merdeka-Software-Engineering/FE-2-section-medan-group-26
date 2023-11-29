@@ -165,9 +165,9 @@ article {
 }
 
 /* CSS untuk judul */
-h2 {
+.news1 h2 {
   color: #333;
-  font-size: 24px;
+  font-size: 35px;
   margin-bottom: 10px;
 }
 
@@ -180,11 +180,13 @@ h3 img {
 }
 
 /* CSS untuk paragraf */
-p {
+.news1 p {
+  max-width: 100%;
   color: #666;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.6;
   margin-bottom: 15px;
+  text-align: justify;
 }
 
 /* Media query untuk layar kecil */

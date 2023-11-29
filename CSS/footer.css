@@ -1,0 +1,36 @@
+/* Styling dasar untuk footer */
+.footer1 {
+    display: flex;
+    background-color: #5a81fa;
+    text-align: center;
+    justify-content: center;
+    align-items: center; /* Tambahkan align-items untuk memastikan konten berada di tengah vertikal */
+    padding: 10px; /* Ubah padding untuk memberikan ruang yang cukup pada layar kecil */
+  }
+  
+  .footer1 img {
+    max-width: 120px;
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  .footer1 h1 {
+    margin: 5px;
+    color: #fff;
+    font-size: 20px;
+  }
+  
+  /* Media Queries untuk Responsif */
+  @media screen and (max-width: 768px) {
+    .footer1 {
+      flex-direction: column;
+      text-align: center;
+      padding: 5px; /* Ubah padding pada layar kecil agar konten tetap terlihat baik */
+    }
+  
+    .footer1 img {
+      margin-bottom: 10px;
+      margin-right: 0;
+    }
+  }
+  

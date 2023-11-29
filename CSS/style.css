@@ -5,13 +5,12 @@
 main {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 5px 10px;
+    justify-content: center;
+    padding: 10px 10px;
 }
 
 .berita1 {
     font-size: 25px;
-    margin-left: 30px;
 }
 
 .berita1 a:hover {
@@ -69,10 +68,10 @@ main {
 /* Media query untuk layar dengan lebar minimal 700px */
 @media screen and (min-width: 700px) {
     .poin1 {
-        font-size: 50px;
+        font-size: 40px;
     }
     .poin2 {
-        font-size: 25px;
+        font-size: 20px;
         top: 60%; /* Posisi top untuk poin2 pada layar yang lebih besar */
     }
     .poin3 {
