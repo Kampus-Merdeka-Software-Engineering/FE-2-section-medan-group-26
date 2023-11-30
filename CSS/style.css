@@ -104,6 +104,7 @@ main {
     font-size: 30px;
     color: #ffffff;
     border-bottom: 10px solid #5a81fa;
+    margin-right: 3%;
     margin-left: 40px;
 }
 
@@ -133,15 +134,17 @@ main {
 .flex-container2 {
   display: flex;
   flex-direction: column;
+  margin-top: 20px;
   width: 100%; /* Lebar container diubah menjadi 100% agar lebih responsif */
-  margin-left: 20px; /* Mengurangi margin agar lebih responsif */
+  margin-left: 80px; /* Mengurangi margin agar lebih responsif */
 }
 
 .flex-container1 {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  margin-top: 20px;
   width: 100%; /* Lebar container diubah menjadi 100% agar lebih responsif */
-  margin-left: 20px; /* Mengurangi margin agar lebih responsif */
+  
 }
 
 .row {
@@ -150,8 +153,12 @@ main {
 }
 
 
-  h1 {
+  h1 p {
     font-size: 15px;
+  }
+
+  h1 div {
+    font-size: 30px;
   }
 
   h1 a img{
@@ -159,32 +166,59 @@ main {
     height: auto;
   }
 
+
+
   h2 a img {
     width: 100%;
     height: auto;
   }
+
+
 
   h3 a img {
     width: 100%;
     height: auto;
   }
 
+
+  
   h4 a img {
     width: 100%;
     height: auto;
   }
 
-  @media all and (max-width: 768px) {
-    .flex-container2,
+
+
+  /* Media query untuk layar dengan lebar min 768px */
+  @media all and (min-width: 700px) {
     .flex-container1 {
-      width: auto; /* Mengubah lebar container menjadi 100% pada layar kecil */
-      margin-left: 0; /* Menghapus margin kiri pada layar kecil */
-      
+        width: 80%;
+        margin-left: 0;
+        flex-direction: row;
     }
-    
-    h1 {
-      font-size: 12px; /* Ukuran font lebih kecil pada layar kecil */
+    .flex-container2 {
+      width: 50%;
+      margin-left: 0;
+      flex-direction: column;
     }
-    
-    /* Anda bisa menyesuaikan properti lainnya sesuai kebutuhan pada layar kecil */
+  
+    h1 p {
+      font-size: 12px;
+    }
+  
+    h1 div {
+      font-size: 24px;
+    }
+  
+    h1 a img,
+    h2 a img,
+    h3 a img,
+    h4 a img {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 10px auto;
+    }
   }
+  
+  
