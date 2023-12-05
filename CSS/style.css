@@ -1,224 +1,408 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 10px;
 }
 
 .berita1 {
-    font-size: 25px;
+  font-size: 25px;
+  width: 100%;
 }
 
 .berita1 a:hover {
-    background-color: black;
-    padding: 5px 5px 5px 5px;
+  background-color: black;
+  padding: 5px 5px 5px 5px;
 }
 
-
 /* Tampilan Berita */
-/* Styling dasar */
 .container {
-    position: relative; /* Membuat konten dalam posisi relatif */
-    overflow: hidden; /* Menghindari gambar keluar dari container */
-    z-index: -1;
+  position: relative;
+  /* Membuat konten dalam posisi relatif */
+  overflow: hidden;
+  /* Menghindari gambar keluar dari container */
+  z-index: -1;
 }
 
 .trending1 {
-    position: relative;
-    text-align: center;
+  margin: 0px;
+  position: relative;
+  text-align: center;
 }
 
 .trending1 img {
-    width: 100%; /* Lebar gambar mencapai 100% lebar parent */
-    height: auto; /* Menjaga aspek rasio gambar */
-    display: block;
-    margin: 0 auto; /* Memposisikan gambar di tengah */
+  width: 100%;
+  /* Lebar gambar mencapai 100% lebar parent */
+  height: auto;
+  /* Menjaga aspek rasio gambar */
+  display: block;
+  margin: 0 auto;
+  /* Memposisikan gambar di tengah */
 }
-
 /* Mengatur teks agar berada di tengah gambar */
-.poin1, .poin2, .poin3 {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-    width: 80%;
+
+.poin1,
+.poin2,
+.poin3 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  width: 80%;
 }
 
 .poin1 {
-    font-size: 20px; /* Ukuran font untuk layar umum */
+  font-size: 20px;
+  /* Ukuran font untuk layar umum */
 }
 
 .poin2 {
-    font-size: 10px; /* Ukuran font untuk layar umum */
-    top: 60%; /* Posisi top untuk poin2 */
+  font-size: 10px;
+  /* Ukuran font untuk layar umum */
+  top: 60%;
+  /* Posisi top untuk poin2 */
 }
 
 .poin3 {
-    font-size: 8px;
-    top: 70%;
-
+  font-size: 8px;
+  top: 70%;
 }
-
 /* Media query untuk layar dengan lebar minimal 700px */
+
 @media screen and (min-width: 700px) {
-    .poin1 {
-        font-size: 40px;
-    }
-    .poin2 {
-        font-size: 20px;
-        top: 60%; /* Posisi top untuk poin2 pada layar yang lebih besar */
-    }
-    .poin3 {
-        font-size: 15px;
-        top: 75%;
-    }
+  .poin1 {
+      font-size: 50px;
+  }
+  .poin2 {
+      font-size: 30px;
+      top: 50%;
+      /* Posisi top untuk poin2 pada layar yang lebih besar */
+  }
+  .poin3 {
+      font-size: 15px;
+      top: 75%;
+  }
 }
 
-@media screen and (max-width: 500px){
-    .poin1 {
-        font-size: 20px; /* Ukuran font untuk layar umum */
-    }
-    
-    .poin2 {
-        font-size: 10px; /* Ukuran font untuk layar umum */
-        top: 60%; /* Posisi top untuk poin2 */
-    }
-    
-    .poin3 {
-        font-size: 8px;
-        top: 70%;
-    }
+@media screen and (max-width: 500px) {
+  .poin1 {
+      font-size: 20px;
+      /* Ukuran font untuk layar umum */
+  }
+  .poin2 {
+      font-size: 10px;
+      /* Ukuran font untuk layar umum */
+      top: 60%;
+      /* Posisi top untuk poin2 */
+  }
+  .poin3 {
+      font-size: 8px;
+      top: 70%;
+  }
 }
-
-
 /* CSS Berita Utama */
-.berita7 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: bold;
-    font-size: 30px;
-    color: #ffffff;
-    border-bottom: 10px solid #5a81fa;
-    margin-right: 3%;
-    margin-left: 40px;
+
+.newss1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  color: #ffffff;
+  border-bottom: 10px solid #5a81fa;
+  margin-right: 3%;
+  margin-left: 40px;
 }
 
-
-.berita7 nav {
-    margin-top: 30px;
-    width: 120px;
-    padding-left: 10px;
-    padding-top: 5px;
-    background-color: #5a81fa;
+.newss1 nav {
+  margin-top: 30px;
+  width: 180px;
+  padding-left: 10px;
+  padding-top: 5px;
+  background-color: #5a81fa;
 }
-
 /* Gaya untuk .berita7 pada layar yang lebih kecil */
-@media screen and (max-width: 768px) {
-    .berita7 {
-        font-size: 20px; /* Mengurangi ukuran font untuk layar kecil */
-        margin-left: 10px; /* Mengurangi margin kiri untuk tampilan yang lebih sesuai */
-        border-bottom: 10px solid #5a81fa;
-    }
-    .berita7 nav {
-        width: 90px; /* Mengubah lebar elemen nav agar lebih responsif */
-    }
-}
 
+@media screen and (max-width: 768px) {
+  .newss1 {
+      font-size: 20px;
+      /* Mengurangi ukuran font untuk layar kecil */
+      margin-left: 10px;
+      /* Mengurangi margin kiri untuk tampilan yang lebih sesuai */
+      border-bottom: 10px solid #5a81fa;
+  }
+  .newss1 nav {
+      width: 120px;
+      /* Mengubah lebar elemen nav agar lebih responsif */
+  }
+}
 
 /* CSS Berita Selengkapnya */
 .flex-container2 {
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
-  width: 100%; /* Lebar container diubah menjadi 100% agar lebih responsif */
-  margin-left: 80px; /* Mengurangi margin agar lebih responsif */
+  margin-top: 30px;
+  gap: 30px;
+  margin-left: 20px;
+}
+
+.flex-container2 .flex-container2-tulisan {
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0px;
+  line-height: 0px;
+}
+
+.flex-container2-gbr {
+  width: 90%;
+  align-items: start;
+}
+
+.flex-container1-gbr {
+  width: 90%;
+  align-items: start;
 }
 
 .flex-container1 {
   display: flex;
   flex-direction: row;
-  margin-top: 20px;
-  width: 100%; /* Lebar container diubah menjadi 100% agar lebih responsif */
-  
+  margin-top: 30px;
+  width: 100%;
+  margin-left: 20px;
+}
+
+.flex-container1 .flex-container1-tulisan {
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0px;
+  line-height: 0px;
 }
 
 .row {
+  margin-left: 50px;
+  margin-right: 50px;
   display: flex;
   flex-direction: row;
+  margin-bottom: 50px;
 }
 
-
-  h1 p {
-    font-size: 15px;
+/* Tampilan Berita Responsive */
+@media all and (max-width: 700px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
   }
-
-  h1 div {
-    font-size: 30px;
-  }
-
-  h1 a img{
-    width: 100%;
-    height: auto;
-  }
-
-
-
-  h2 a img {
-    width: 100%;
-    height: auto;
-  }
-
-
-
-  h3 a img {
-    width: 100%;
-    height: auto;
-  }
-
-
   
-  h4 a img {
-    width: 100%;
-    height: auto;
-  }
-
-
-
-  /* Media query untuk layar dengan lebar min 768px */
-  @media all and (min-width: 700px) {
-    .flex-container1 {
-        width: 80%;
-        margin-left: 0;
-        flex-direction: row;
-    }
-    .flex-container2 {
-      width: 50%;
-      margin-left: 0;
-      flex-direction: column;
-    }
-  
-    h1 p {
-      font-size: 12px;
-    }
-  
-    h1 div {
-      font-size: 24px;
-    }
-  
-    h1 a img,
-    h2 a img,
-    h3 a img,
-    h4 a img {
+  .flex-container1 {
       width: 100%;
-      height: auto;
-      display: block;
-      margin: 10px auto;
-    }
+  }
+  .flex-container2 {
+      width: 100%;
+  }
+}
+
+/* Tampilan Berita Bulu Tangkis */
+.newss2 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  color: #ffffff;
+  border-bottom: 10px solid #41fd83;
+  margin-right: 3%;
+  margin-left: 40px;
+}
+
+.newss2 nav {
+  margin-top: 30px;
+  width: 190px;
+  padding-left: 10px;
+  padding-top: 5px;
+  background-color: #41fd83;
+}
+
+@media screen and (max-width: 768px) {
+  .newss2 {
+      font-size: 20px;
+      /* Mengurangi ukuran font untuk layar kecil */
+      margin-left: 10px;
+      /* Mengurangi margin kiri untuk tampilan yang lebih sesuai */
+      border-bottom: 10px solid #41fd83;
+  }
+  .newss2 nav {
+      width: 130px;
+      /* Mengubah lebar elemen nav agar lebih responsif */
+  }
+}
+
+/* CSS Berita Bulu Tangkis Selengkapnya */
+.flex-container4 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  gap: 30px;
+  margin-left: 20px;
+}
+
+.flex-container4 .flex-container4-tulisan {
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0px;
+  line-height: 0px;
+}
+
+.flex-container4-gbr {
+  width: 90%;
+  align-items: start;
+}
+
+.flex-container3-gbr {
+  width: 90%;
+  align-items: start;
+}
+
+.flex-container3 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  width: 100%;
+  margin-left: 20px;
+}
+
+.flex-container3 .flex-container3-tulisan {
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0px;
+  line-height: 0px;
+}
+
+.row1 {
+  margin-left: 50px;
+  margin-right: 50px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+
+/* Tampilan Berita Responsive */
+@media all and (max-width: 700px) {
+  .row1 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
   }
   
+  .flex-container3 {
+      width: 100%;
+  }
+  .flex-container4 {
+      width: 100%;
+  }
+}
+
+.newss3 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  color: #ffffff;
+  border-bottom: 10px solid #656565;
+  margin-right: 3%;
+  margin-left: 40px;
+}
+
+.newss3 nav {
+  margin-top: 30px;
+  width: 130px;
+  padding-left: 10px;
+  padding-top: 5px;
+  background-color: #656565;
+}
+
+@media screen and (max-width: 768px) {
+  .newss3 {
+      font-size: 20px;
+      /* Mengurangi ukuran font untuk layar kecil */
+      margin-left: 10px;
+      /* Mengurangi margin kiri untuk tampilan yang lebih sesuai */
+      border-bottom: 10px solid #656565;
+  }
+  .newss3 nav {
+      width: 100px;
+      /* Mengubah lebar elemen nav agar lebih responsif */
+  }
+}
+
+/* CSS Berita Bulu Tangkis Selengkapnya */
+.flex-container6 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  gap: 30px;
+  margin-left: 20px;
+}
+
+.flex-container6 .flex-container6-tulisan {
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0px;
+  line-height: 0px;
+}
+
+.flex-container6-gbr {
+  width: 90%;
+  align-items: start;
+}
+
+.flex-container5-gbr {
+  width: 90%;
+  align-items: start;
+}
+
+.flex-container5 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  width: 100%;
+  margin-left: 20px;
+}
+
+.flex-container5 .flex-container5-tulisan {
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0px;
+  line-height: 0px;
+}
+
+.row2 {
+  margin-left: 50px;
+  margin-right: 50px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+
+/* Tampilan Berita Responsive */
+@media all and (max-width: 700px) {
+  .row2 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+  }
   
+  .flex-container5 {
+      width: 100%;
+  }
+  .flex-container6 {
+      width: 100%;
+  }
+}
