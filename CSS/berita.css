@@ -1,162 +1,4 @@
-*{
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  font-weight: bold;
-  margin: 0;
-  background: #ffffff;
-}
-
-header {
-  background-color: #5a81fa;
-  display: flex;
-  align-items: center;
-  padding: 10px 10px;
-  justify-content: space-between;
-  box-shadow: 0px 10px 10px 0 rgba(80,119,242,0.3);
-}
-
-nav ul li .dropdown {
-  display: none;
-  color: white;
-}
-
- nav ul li:hover .dropdown {
-  display: block;
-  position: absolute;
-  padding: 15px;
-  background-color: #6c6c6d;
-}
-
-nav ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  gap: 100px;
-  padding: 0;
-}
-
-nav ul a {
-  list-style: none;
-  color: black;
-  text-decoration: none;
-}
-
-nav ul a:hover {
-  color: white;
-}
-
-.searchInput {
-  display: flex;
-  align-items: center;
-  height: 50px;
-  background-color: blue;
-  width: 400px;
-  border-radius: 20px;
-  overflow: hidden;
-}
-
-.searchInput input {
-  width: 100%;
-  height: 100%;
-  padding: 0px 10px;
-  border: none;
-  outline: none;
-  font-size: 15px;
-}
-
-.btn1 {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  color: #ffffff;
-  justify-content: center;
-  align-items: center;
-  background-color: #102362;
-  border: 2px solid black;
-  border-radius: 5px;
-  padding: 5px 5px 5px 5px;
-}
-
-.searchInput span {
-  width: 70px;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 30px;
-  color: #ffffff;
-}
-
-.menuBtn {
-  font-size: 20px;
-  width: 40px;
-  height: 40px;
-  border-radius: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-
-.menuBtn:hover {
-  background-color: blue;
-}
-
-.dekstop {
-  display: none;
-}
-
-@media all and (min-width:700px) {
-      header {
-        padding: 5px 30px;
-      }
-
-      .dekstop {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .menuBtn {
-        display: none;
-      }
-}
-
-
-/* menu mobile */
-
-.mobile {
-  position: absolute;
-  top: 120px;
-  width: 100%;
-  max-width: 200px;
-  background-color: #5a81fa;
-  margin-left: 297px;
-  z-index: 1;
-}
-
-.mobile nav,
-.mobile nav ul {
-  gap: 30px;
-  flex-direction: column;
-}
-
-.hidden {
-  display: none;
-}
-
-@media all and (min-width:700px) {
-  .mobile {
-    display: none;
-  }
-}
-
-  
-
-  /* CSS untuk konten artikel */
+/* CSS untuk konten artikel */
 article {
   width: 80%; /* Lebar konten */
   margin: 0 auto; /* Membuat konten berada di tengah */
@@ -189,13 +31,123 @@ h3 img {
   text-align: justify;
 }
 
+/* CSS untuk kolom komentar */
+.comment-box {
+  max-width: 90%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: rgb(242, 242, 244);
+  border-radius: 5px;
+}
+
+#username,
+#comment-input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #a8b1ce;
+  border-radius: 3px;
+}
+
+.submit-comment {
+  background-color: #354c9a;
+  color: white;
+  font-size: 14px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  width: auto;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.submit-comment:hover {
+  background-color: #425db3;
+}
+
+.comment-list {
+  list-style-type: none;
+  padding: 0;
+  font-size: medium;
+}
+#username {
+  font-weight: normal;
+  font-family: monospace;
+}
+
+.comment-list,
+#commentText {
+  font-weight: normal;
+}
+
+.comment-item {
+  background-color: #ffffff;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 3px;
+}
+
+/* Responsive */
 /* Media query untuk layar kecil */
-@media screen and (min-width: 700px) {
+@media screen and (max-width: 1024px) {
   article {
     width: 90%; /* Mengurangi lebar konten pada layar kecil */
     padding: 15px; /* Mengurangi padding pada layar kecil */
   }
+  .news1 h2,
+  h2 {
+    font-size: 40px; /* Mengurangi ukuran font judul pada layar kecil */
+  }
+  .news1 p {
+    font-size: 24px;
+  }
+  #username,
+  #comment-input,
+  .comment-item,
+  .submit-comment {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  article {
+    width: 90%; /* Mengurangi lebar konten pada layar kecil */
+    padding: 15px; /* Mengurangi padding pada layar kecil */
+  }
+  .news1 p {
+    font-size: 17px;
+  }
+  .news1 h2,
+  h2 {
+    font-size: 25px; /* Mengurangi ukuran font judul pada layar kecil */
+  }
+  #username,
+  #comment-input,
+  .submit-comment,
+  .comment-item {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 500px) {
+  article {
+    width: 90%; /* Mengurangi lebar konten pada layar kecil */
+    padding: 15px; /* Mengurangi padding pada layar kecil */
+  }
+  .news1 p {
+    font-size: 12px;
+  }
+  .news1 h2,
   h2 {
     font-size: 20px; /* Mengurangi ukuran font judul pada layar kecil */
+  }
+  #username,
+  #comment-input {
+    font-size: 11px;
+  }
+  .submit-comment,
+  .comment-item {
+    font-size: 11px;
   }
 }
