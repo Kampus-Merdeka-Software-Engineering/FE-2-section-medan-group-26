@@ -77,11 +77,11 @@ main {
 
 @media screen and (min-width: 700px) {
   .poin1 {
-      font-size: 40px;
+      font-size: 50px;
   }
   .poin2 {
-      font-size: 20px;
-      top: 60%;
+      font-size: 30px;
+      top: 50%;
       /* Posisi top untuk poin2 pada layar yang lebih besar */
   }
   .poin3 {
@@ -304,6 +304,105 @@ main {
       width: 100%;
   }
   .flex-container4 {
+      width: 100%;
+  }
+}
+
+.newss3 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  color: #ffffff;
+  border-bottom: 10px solid #656565;
+  margin-right: 3%;
+  margin-left: 40px;
+}
+
+.newss3 nav {
+  margin-top: 30px;
+  width: 130px;
+  padding-left: 10px;
+  padding-top: 5px;
+  background-color: #656565;
+}
+
+@media screen and (max-width: 768px) {
+  .newss3 {
+      font-size: 20px;
+      /* Mengurangi ukuran font untuk layar kecil */
+      margin-left: 10px;
+      /* Mengurangi margin kiri untuk tampilan yang lebih sesuai */
+      border-bottom: 10px solid #656565;
+  }
+  .newss3 nav {
+      width: 100px;
+      /* Mengubah lebar elemen nav agar lebih responsif */
+  }
+}
+
+/* CSS Berita Bulu Tangkis Selengkapnya */
+.flex-container6 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  gap: 30px;
+  margin-left: 20px;
+}
+
+.flex-container6 .flex-container6-tulisan {
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0px;
+  line-height: 0px;
+}
+
+.flex-container6-gbr {
+  width: 90%;
+  align-items: start;
+}
+
+.flex-container5-gbr {
+  width: 90%;
+  align-items: start;
+}
+
+.flex-container5 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  width: 100%;
+  margin-left: 20px;
+}
+
+.flex-container5 .flex-container5-tulisan {
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0px;
+  line-height: 0px;
+}
+
+.row2 {
+  margin-left: 50px;
+  margin-right: 50px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+
+/* Tampilan Berita Responsive */
+@media all and (max-width: 700px) {
+  .row2 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+  }
+  
+  .flex-container5 {
+      width: 100%;
+  }
+  .flex-container6 {
       width: 100%;
   }
 }
