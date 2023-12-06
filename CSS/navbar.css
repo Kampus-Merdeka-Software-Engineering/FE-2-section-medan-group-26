@@ -152,6 +152,12 @@ nav ul a:hover {
   align-items: center;
 }
 
+.mobile a:hover {
+  background-color: #ffffff;
+  padding: 2px;
+  color: #000000;
+}
+
 .mobile nav,
 .mobile nav ul {
   gap: 30px;
