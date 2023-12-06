@@ -46,6 +46,13 @@ nav ul a {
   text-decoration: none;
 }
 
+.mobile ul a {
+  list-style: none;
+  color: white;
+  text-decoration: none;
+}
+
+
 nav ul a:hover {
   color: white;
 }
@@ -92,9 +99,9 @@ nav ul a:hover {
 
 .menuBtn {
   font-size: 20px;
-  width: 40px;
+  width: 60px;
   height: 40px;
-  border-radius: 40px;
+  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -102,7 +109,8 @@ nav ul a:hover {
 }
 
 .menuBtn:hover {
-  background-color: blue;
+  background-color: #102362;
+  color: #ffffff;
 }
 
 .dekstop {
@@ -130,18 +138,26 @@ nav ul a:hover {
 
 .mobile {
   position: absolute;
-  top: 120px;
+  top: 90px;
   width: 100%;
-  max-width: 200px;
-  background-color: #5a81fa;
-  margin-left: 297px;
+  height: 60%;
+  max-width: 158px;
+  background-color: #000000;
+  opacity: 75%;
+  right: 0;
   z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
 .mobile nav,
 .mobile nav ul {
   gap: 30px;
   flex-direction: column;
+  display: flex;
+  align-items: flex-start;
 }
 
 .hidden {

@@ -73,14 +73,13 @@ main {
   font-size: 8px;
   top: 70%;
 }
-/* Media query untuk layar dengan lebar minimal 700px */
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 1024px) {
   .poin1 {
       font-size: 50px;
   }
   .poin2 {
-      font-size: 30px;
+      font-size: 20px;
       top: 50%;
       /* Posisi top untuk poin2 pada layar yang lebih besar */
   }
@@ -90,15 +89,31 @@ main {
   }
 }
 
+/* Media query untuk layar dengan lebar minimal 700px */
+@media screen and (min-width: 700px) and (max-width: 1023){
+  .poin1 {
+      font-size: 25px;
+  }
+  .poin2 {
+      font-size: 15px;
+      top: 50%;
+      /* Posisi top untuk poin2 pada layar yang lebih besar */
+  }
+  .poin3 {
+      font-size: 12px;
+      top: 75%;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .poin1 {
-      font-size: 20px;
+      font-size: 15px;
       /* Ukuran font untuk layar umum */
   }
   .poin2 {
       font-size: 10px;
       /* Ukuran font untuk layar umum */
-      top: 60%;
+      top: 55%;
       /* Posisi top untuk poin2 */
   }
   .poin3 {
