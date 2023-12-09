@@ -8,7 +8,7 @@
   padding: 10px; /* Ubah padding untuk memberikan ruang yang cukup pada layar kecil */
 }
 
-.footer1 .logo_nav {
+.footer1 .logo_foot {
   max-width: 70px;
   height: auto;
   margin-right: 20px;
@@ -49,5 +49,8 @@
     margin: 5px;
     color: #fff;
     font-size: 12px;
+  }
+  .arrow-up{
+    margin-left: 80%;
   }
 }

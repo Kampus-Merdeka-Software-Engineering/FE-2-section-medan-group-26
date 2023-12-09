@@ -15,8 +15,6 @@ document.getElementById('search-btn').addEventListener('click', function() {
   }
 });
 
-// Untuk mengganti warna menu navbar ketika diklik
-
 // untuk tombol bar reponsive
 const mobilemenu = document.querySelector(".mobile");
 const menuBtn = document.querySelector(".menuBtn");
@@ -27,13 +25,7 @@ menuBtn.addEventListener("click", function () {
   console.log("Tombol Menu diklik!");
 });
 
-if (menuBtnDisplay) {
-  mobilemenu.classList.remove("hidden");
-} else {
-  mobilemenu.classList.add("hidden");
-}
-
-// kode untuk arrow up
+// kode untuk arrow up footer
 document.querySelector('.arrow-up').addEventListener('click', function(e) {
   e.preventDefault();
   window.scrollTo({
