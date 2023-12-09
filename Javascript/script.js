@@ -1,4 +1,21 @@
 // untuk tombol search
+document.getElementById('search-input').addEventListener('keyup', function(event) {
+  if (event.key === 'Enter') {
+    document.getElementById('search-btn').click();
+  }
+});
+
+document.getElementById('search-btn').addEventListener('click', function() {
+  let searchQuery = document.getElementById('search-input').value;
+
+  if (searchQuery) {
+    window.location.href = `/search?query=${searchQuery}`;
+  } else {
+    alert('Please enter something to search.');
+  }
+});
+
+// Untuk mengganti warna menu navbar ketika diklik
 
 // untuk tombol bar reponsive
 const mobilemenu = document.querySelector(".mobile");
@@ -10,6 +27,21 @@ menuBtn.addEventListener("click", function () {
   console.log("Tombol Menu diklik!");
 });
 
+if (menuBtnDisplay) {
+  mobilemenu.classList.remove("hidden");
+} else {
+  mobilemenu.classList.add("hidden");
+}
+
+// kode untuk arrow up
+document.querySelector('.arrow-up').addEventListener('click', function(e) {
+  e.preventDefault();
+  window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+  });
+});
+
 // penggabungan
 
 const header = document.getElementById("navbar");
@@ -19,7 +51,7 @@ fetch("./navbar.html")
   .then((snap) => snap.text())
   .then((result) => {
     navbar.innerHtml = result;
-  });
+});
 
 // Untuk kolom komentar
 // Select elements
