@@ -3,9 +3,6 @@
 }
 
 main {
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
   padding: 0px;
   margin: 0px;
 }
@@ -49,73 +46,72 @@ main {
 }
 
 .poin1 {
-  font-size: 20px;
+  font-size: 40px;
   /* Ukuran font untuk layar umum */
 }
 
 .poin2 {
-  font-size: 15px;
+  font-size: 25px;
   /* Ukuran font untuk layar umum */
-  top: 60%;
+  top: 50%;
   /* Posisi top untuk poin2 */
 }
 
 .poin3 {
-  font-size: 10px;
+  font-size: 15px;
   top: 70%;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .poin1 {
-      font-size: 50px;
+    font-size: 30px;
   }
   .poin2 {
-      font-size: 20px;
-      top: 50%;
-      /* Posisi top untuk poin2 pada layar yang lebih besar */
+    font-size: 20px;
+    top: 50%;
   }
   .poin3 {
-      font-size: 15px;
-      top: 75%;
+    font-size: 15px;
+    top: 75%;
   }
 }
 
 /* Media query untuk layar dengan lebar minimal 700px */
-@media screen and (min-width: 700px){
+@media screen and (max-width: 700px) {
   .poin1 {
-      font-size: 25px;
+    font-size: 20px;
   }
   .poin2 {
-      font-size: 15px;
-      top: 50%;
-      /* Posisi top untuk poin2 pada layar yang lebih besar */
+    font-size: 14px;
+    top: 50%;
+    /* Posisi top untuk poin2 pada layar yang lebih besar */
   }
   .poin3 {
-      font-size: 12px;
-      top: 75%;
+    font-size: 12px;
+    top: 75%;
   }
 }
 
 @media screen and (max-width: 500px) {
   .poin1 {
-      font-size: 15px;
-      /* Ukuran font untuk layar umum */
+    font-size: 15px;
+    /* Ukuran font untuk layar umum */
   }
   .poin2 {
-      font-size: 11px;
-      /* Ukuran font untuk layar umum */
-      top: 50%;
-      /* Posisi top untuk poin2 */
+    font-size: 11px;
+    /* Ukuran font untuk layar umum */
+    top: 50%;
+    /* Posisi top untuk poin2 */
   }
   .poin3 {
-      font-size: 8px;
-      top: 70%;
+    font-size: 8px;
+    top: 70%;
   }
 }
 /* CSS Berita Utama */
 
-.newss1 {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+#sepak-bola {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: bold;
   font-size: 30px;
   color: #ffffff;
@@ -124,7 +120,7 @@ main {
   margin-left: 40px;
 }
 
-.newss1 nav {
+#sepak-bola nav {
   margin-top: 30px;
   width: 180px;
   padding-left: 10px;
@@ -134,16 +130,16 @@ main {
 /* Gaya untuk .berita7 pada layar yang lebih kecil */
 
 @media screen and (max-width: 768px) {
-  .newss1 {
-      font-size: 20px;
-      /* Mengurangi ukuran font untuk layar kecil */
-      margin-left: 10px;
-      /* Mengurangi margin kiri untuk tampilan yang lebih sesuai */
-      border-bottom: 10px solid #5a81fa;
+  #sepak-bola {
+    font-size: 20px;
+    /* Mengurangi ukuran font untuk layar kecil */
+    margin-left: 10px;
+    /* Mengurangi margin kiri untuk tampilan yang lebih sesuai */
+    border-bottom: 10px solid #5a81fa;
   }
-  .newss1 nav {
-      width: 120px;
-      /* Mengubah lebar elemen nav agar lebih responsif */
+  #sepak-bola nav {
+    width: 120px;
+    /* Mengubah lebar elemen nav agar lebih responsif */
   }
 }
 
@@ -205,45 +201,45 @@ main {
     flex-direction: column;
     padding-left: 15px;
   }
-  
+
   .flex-container1 {
-      width: 100%;
+    width: 100%;
   }
   .flex-container2 {
-      width: 100%;
+    width: 100%;
   }
 }
 
 /* Tampilan Berita Bulu Tangkis */
-.newss2 {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+#bulu-tangkis {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: bold;
   font-size: 30px;
   color: #ffffff;
-  border-bottom: 10px solid #41fd83;
+  border-bottom: 10px solid #2fc891;
   margin-right: 3%;
   margin-left: 40px;
 }
 
-.newss2 nav {
+#bulu-tangkis nav {
   margin-top: 30px;
   width: 190px;
   padding-left: 10px;
   padding-top: 5px;
-  background-color: #41fd83;
+  background-color: #2fc891;
 }
 
 @media screen and (max-width: 768px) {
-  .newss2 {
-      font-size: 20px;
-      /* Mengurangi ukuran font untuk layar kecil */
-      margin-left: 10px;
-      /* Mengurangi margin kiri untuk tampilan yang lebih sesuai */
-      border-bottom: 10px solid #41fd83;
+  #bulu-tangkis {
+    font-size: 20px;
+    /* Mengurangi ukuran font untuk layar kecil */
+    margin-left: 10px;
+    /* Mengurangi margin kiri untuk tampilan yang lebih sesuai */
+    border-bottom: 10px solid #2fc891;
   }
-  .newss2 nav {
-      width: 130px;
-      /* Mengubah lebar elemen nav agar lebih responsif */
+  #bulu-tangkis nav {
+    width: 130px;
+    /* Mengubah lebar elemen nav agar lebih responsif */
   }
 }
 
@@ -305,17 +301,17 @@ main {
     flex-direction: column;
     padding-left: 15px;
   }
-  
+
   .flex-container3 {
-      width: 100%;
+    width: 100%;
   }
   .flex-container4 {
-      width: 100%;
+    width: 100%;
   }
 }
 
-.newss3 {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+#basket {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-weight: bold;
   font-size: 30px;
   color: #ffffff;
@@ -324,7 +320,7 @@ main {
   margin-left: 40px;
 }
 
-.newss3 nav {
+#basket nav {
   margin-top: 30px;
   width: 130px;
   padding-left: 10px;
@@ -333,16 +329,16 @@ main {
 }
 
 @media screen and (max-width: 768px) {
-  .newss3 {
-      font-size: 20px;
-      /* Mengurangi ukuran font untuk layar kecil */
-      margin-left: 10px;
-      /* Mengurangi margin kiri untuk tampilan yang lebih sesuai */
-      border-bottom: 10px solid #656565;
+  #basket {
+    font-size: 20px;
+    /* Mengurangi ukuran font untuk layar kecil */
+    margin-left: 10px;
+    /* Mengurangi margin kiri untuk tampilan yang lebih sesuai */
+    border-bottom: 10px solid #656565;
   }
-  .newss3 nav {
-      width: 100px;
-      /* Mengubah lebar elemen nav agar lebih responsif */
+  #basket nav {
+    width: 100px;
+    /* Mengubah lebar elemen nav agar lebih responsif */
   }
 }
 
@@ -404,11 +400,11 @@ main {
     flex-direction: column;
     padding-left: 15px;
   }
-  
+
   .flex-container5 {
-      width: 100%;
+    width: 100%;
   }
   .flex-container6 {
-      width: 100%;
+    width: 100%;
   }
 }

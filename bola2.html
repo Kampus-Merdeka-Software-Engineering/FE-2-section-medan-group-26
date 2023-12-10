@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contoh Tampilan Berita</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Fungsi untuk memuat konten berita saat judul berita diklik
+            $(".judul-berita").click(function() {
+                var beritaId = $(this).data('berita-id');
+                $.ajax({
+                    type: 'GET',
+                    url: '/api/berita/' + beritaId, // URL ke backend untuk mendapatkan konten berita
+                    success: function(data) {
+                        $('#konten-berita').html(data); // Menampilkan konten berita di div dengan id 'konten-berita'
+                    },
+                    error: function() {
+                        alert('Gagal memuat konten berita.');
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Berita Terkini</h1>
+    <div class="daftar-berita">
+        <!-- Judul-judul berita -->
+        <div class="judul-berita" data-berita-id="1">Judul Berita 1</div>
+        <div class="judul-berita" data-berita-id="2">Judul Berita 2</div>
+        <!-- ... dan seterusnya -->
+    </div>
+
+    <!-- Tempat untuk menampilkan konten berita -->
+    <div id="konten-berita"></div>
+</body>
+</html>

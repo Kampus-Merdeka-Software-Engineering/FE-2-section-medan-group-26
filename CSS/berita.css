@@ -9,13 +9,13 @@ article {
 /* CSS untuk judul */
 .news1 h2 {
   color: #333;
-  font-size: 35px;
+  font-size: 30px;
   margin-bottom: 10px;
 }
 
 /* CSS untuk gambar */
 h3 img {
-  max-width: 100%; /* Gambar responsif */
+  width: 70%; /* Gambar responsif */
   height: auto;
   display: block;
   margin: 0 auto; /* Memberikan jarak bawah */
@@ -25,7 +25,7 @@ h3 img {
 .news1 p {
   max-width: 100%;
   color: #666;
-  font-size: 15px;
+  font-size: 17px;
   line-height: 1.6;
   margin-bottom: 15px;
   text-align: justify;
@@ -33,12 +33,16 @@ h3 img {
 
 /* CSS untuk kolom komentar */
 .comment-box {
-  max-width: 90%;
+  max-width: 80%;
   margin: 0 auto;
   margin-bottom: 40px;
-  padding: 20px;
+  padding: 5px 20px;
   background-color: rgb(242, 242, 244);
   border-radius: 5px;
+}
+
+.comment-box h2 {
+  font-size: 20px;
 }
 
 #username,
@@ -53,12 +57,14 @@ h3 img {
 .submit-comment {
   background-color: #354c9a;
   color: white;
-  font-size: 14px;
+  font-size: 12px;
   padding: 10px 20px;
   border: none;
   cursor: pointer;
   width: auto;
   border-radius: 3px;
+  display: flex;
+  justify-content: center;
   text-align: center;
 }
 
@@ -71,6 +77,7 @@ h3 img {
   padding: 0;
   font-size: medium;
 }
+
 #username {
   font-weight: normal;
   font-family: monospace;
@@ -89,58 +96,41 @@ h3 img {
 }
 
 /* Responsive */
-/* Media query untuk layar kecil */
-@media screen and (max-width: 1024px) {
-  article {
-    width: 90%; /* Mengurangi lebar konten pada layar kecil */
-    padding: 15px; /* Mengurangi padding pada layar kecil */
-  }
-  .news1 h2,
-  h2 {
-    font-size: 40px; /* Mengurangi ukuran font judul pada layar kecil */
-  }
-  .news1 p {
-    font-size: 24px;
-  }
-  #username,
-  #comment-input,
-  .comment-item,
-  .submit-comment {
-    font-size: 24px;
-  }
-}
-
 @media screen and (max-width: 700px) {
   article {
     width: 90%; /* Mengurangi lebar konten pada layar kecil */
     padding: 15px; /* Mengurangi padding pada layar kecil */
   }
   .news1 p {
-    font-size: 17px;
+    font-size: 15px;
   }
-  .news1 h2,
-  h2 {
-    font-size: 25px; /* Mengurangi ukuran font judul pada layar kecil */
+  .news1 h2 {
+    font-size: 23px; /* Mengurangi ukuran font judul pada layar kecil */
+  }
+  .comment-box h2 {
+    font-size: 18px;
   }
   #username,
   #comment-input,
   .submit-comment,
   .comment-item {
-    font-size: 15px;
+    font-size: 13px;
   }
 }
 
 @media screen and (min-width: 200px) and (max-width: 500px) {
   article {
     width: 90%; /* Mengurangi lebar konten pada layar kecil */
-    padding: 15px; /* Mengurangi padding pada layar kecil */
+    padding: 5px; /* Mengurangi padding pada layar kecil */
   }
   .news1 p {
     font-size: 12px;
   }
-  .news1 h2,
-  h2 {
-    font-size: 20px; /* Mengurangi ukuran font judul pada layar kecil */
+  .news1 h2 {
+    font-size: 18px; /* Mengurangi ukuran font judul pada layar kecil */
+  }
+  .comment-box h2 {
+    font-size: 15px;
   }
   #username,
   #comment-input {

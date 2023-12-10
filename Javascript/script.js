@@ -1,20 +1,3 @@
-// untuk tombol search
-document.getElementById('search-input').addEventListener('keyup', function(event) {
-  if (event.key === 'Enter') {
-    document.getElementById('search-btn').click();
-  }
-});
-
-document.getElementById('search-btn').addEventListener('click', function() {
-  let searchQuery = document.getElementById('search-input').value;
-
-  if (searchQuery) {
-    window.location.href = `/search?query=${searchQuery}`;
-  } else {
-    alert('Please enter something to search.');
-  }
-});
-
 // untuk tombol bar reponsive
 const mobilemenu = document.querySelector(".mobile");
 const menuBtn = document.querySelector(".menuBtn");
@@ -22,15 +5,28 @@ let menuBtnDisplay = true;
 
 menuBtn.addEventListener("click", function () {
   mobilemenu.classList.toggle("hidden");
-  console.log("Tombol Menu diklik!");
+});
+// Ambil semua elemen yang merupakan tautan submenu
+const submenuLinks = document.querySelectorAll(
+  ".mobile li:not(:first-child) a"
+);
+
+// Tambahkan event listener untuk setiap tautan submenu
+submenuLinks.forEach((link) => {
+  link.addEventListener("click", function () {
+    const mobileMenu = document.querySelector(".mobile");
+
+    // Sembunyikan menu dropdown saat submenu diklik
+    mobileMenu.classList.add("hidden");
+  });
 });
 
 // kode untuk arrow up footer
-document.querySelector('.arrow-up').addEventListener('click', function(e) {
+document.querySelector(".arrow-up").addEventListener("click", function (e) {
   e.preventDefault();
   window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
+    top: 0,
+    behavior: "smooth",
   });
 });
 
@@ -43,7 +39,7 @@ fetch("./navbar.html")
   .then((snap) => snap.text())
   .then((result) => {
     navbar.innerHtml = result;
-});
+  });
 
 // Untuk kolom komentar
 // Select elements

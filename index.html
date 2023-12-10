@@ -1,243 +1,330 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>26News</title>
     <!-- CSS -->
-    <link rel="stylesheet" href="../FE-2-section-medan-group-26/CSS/navbar.css">
-    <link rel="stylesheet" href="../FE-2-section-medan-group-26/CSS/style.css">
-    <link rel="stylesheet" href="../FE-2-section-medan-group-26/CSS/footer.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    <link
+      rel="stylesheet"
+      href="../FE-2-section-medan-group-26/CSS/navbar.css"
     />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-</head>
+    <link
+      rel="stylesheet"
+      href="../FE-2-section-medan-group-26/CSS/style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../FE-2-section-medan-group-26/CSS/footer.css"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
 
-<body>
+  <body>
     <header>
-        <img class="logo_nav" src="../FE-2-section-medan-group-26/assets/logo.svg" width="100%">
-        <div class="searchInput dekstop">
-            <input type="text" placeholder="Search...">
-            <span class="material-symbols-outlined">search</span>
-        </div>
-        <nav class="dekstop">
-            <ul>
-                <li><a href="../FE-2-section-medan-group-26/index.html">Home</a></li>
-                <li><a href="#">Sports</a>
-                    <ul class="dropdown">
-                        <li><a href="sub1">Sepak Bola</a></li>
-                        <li><a href="sub1">Bulu Tangkis</a></li>
-                        <li><a href="sub1">Basket</a></li>
-                    </ul>
-                </li>
-                <li><a href="../FE-2-section-medan-group-26/about.html">About Us</a></li>
+      <img
+        class="logo_nav"
+        src="../FE-2-section-medan-group-26/assets/logo.svg"
+        width="100%"
+      />
+      <nav class="dekstop">
+        <ul>
+          <li>
+            <a href="../FE-2-section-medan-group-26/index.html">Home</a>
+          </li>
+          <li>
+            <a href="#">Sports</a>
+            <ul class="dropdown">
+              <li>
+                <a href="#sepak-bola">Sepak Bola</a>
+              </li>
+              <li>
+                <a href="#bulu-tangkis">Bulu Tangkis</a>
+              </li>
+              <li>
+                <a href="#basket">Basket</a>
+              </li>
             </ul>
-        </nav>
-
-        <div class="menuBtn">
-            <span class="material-symbols-outlined">menu</span>
-        </div>
-
-        <!-- Navbar Untuk Mobile -->
-        <div class="mobile hidden">
-            <nav>
-                <ul>
-                    <li><a href="../FE-2-section-medan-group-26/index.html">Home</a></li>
-                    <li><a href="sports">Sports</a> <img src="" alt=""></li>
-                    <li><a href="../FE-2-section-medan-group-26/about.html">About Us</a></li>
-        </div>
+          </li>
+          <li>
+            <a href="../FE-2-section-medan-group-26/about.html">About Us</a>
+          </li>
         </ul>
+      </nav>
+
+      <div class="menuBtn">
+        <span class="material-symbols-outlined">menu</span>
+      </div>
+
+      <!-- Navbar Untuk Mobile -->
+      <div class="mobile hidden">
+        <nav>
+          <ul>
+            <li>
+              <a href="../FE-2-section-medan-group-26/index.html">Home</a>
+            </li>
+            <li>
+              <a href="#sepak-bola">Sepak Bola</a>
+            </li>
+            <li>
+              <a href="#bulu-tangkis">Bulu Tangkis</a>
+            </li>
+            <li>
+              <a href="#basket">Basket</a>
+            </li>
+            <li>
+              <a href="../FE-2-section-medan-group-26/about.html">About Us</a>
+            </li>
+          </ul>
         </nav>
-        </div>
+      </div>
     </header>
 
     <!-- Tampilan Home Berita -->
     <main>
-            <div class="trending1">
-                <a href="../FE-2-section-medan-group-26/berita.html">
-                    <img src="../FE-2-section-medan-group-26/assets/g6.jpg">
-                </a>
-                <a href="../FE-2-section-medan-group-26/berita.html">
-                    <h2 class="poin1">Kericuhan Pecah Usai Laga PSS vs Bali United, Bench Pemain Dirusak</h2>
-                </a>
-                <a href="../FE-2-section-medan-group-26/berita.html">
-                    <h4 class="poin2">Kericuhan pecah usai laga PSS Sleman vs Bali United pada pertandingan Liga 1 di Stadion Maguwoharjo, Sleman, Jumat (3/11). Sekelompok orang diduga oknum suporter masuk ke lapangan hingga merusak fasilitas stadion.</h4>
-                </a>
-                <a href="../FE-2-section-medan-group-26/berita.html">
-                    <h6 class="poin3">Baca Berita Selengkapnya Dengan Klik Gambar</h6>
-                </a>
-            </div>
+      <div class="trending1">
+        <a href="../FE-2-section-medan-group-26/berita.html">
+          <img src="../FE-2-section-medan-group-26/assets/g6.jpg" />
+        </a>
+        <a href="../FE-2-section-medan-group-26/berita.html">
+          <h2 class="poin1">
+            Kericuhan Pecah Usai Laga PSS vs Bali United, Bench Pemain Dirusak
+          </h2>
+        </a>
+        <a href="../FE-2-section-medan-group-26/berita.html">
+          <h4 class="poin2">
+            Kericuhan pecah usai laga PSS Sleman vs Bali United pada
+            pertandingan Liga 1 di Stadion Maguwoharjo, Sleman, Jumat (3/11).
+            Sekelompok orang diduga oknum suporter masuk ke lapangan hingga
+            merusak fasilitas stadion.
+          </h4>
+        </a>
+        <a href="../FE-2-section-medan-group-26/berita.html">
+          <h6 class="poin3">Baca Berita Selengkapnya Dengan Klik Gambar</h6>
+        </a>
+      </div>
     </main>
 
     <!-- Tampilan Berita Sepak Bola -->
-    <div class="newss1">
-        <nav>Sepak Bola</nav>
+    <div id="sepak-bola">
+      <nav>Sepak Bola</nav>
     </div>
 
     <!-- Berita Lengkap -->
     <article>
-        <div class="row">
-            <div class="flex-container1">
-                <div class="flex-container1-gbr">
-                    <a href="../FE-2-section-medan-group-26/bola1.html">
-                        <img class="flex-container2-gbr" src="../FE-2-section-medan-group-26/assets/g7.jpg">
-                    </a>
-                    <div class="flex-container1-tulisan">
-                        <p><mark>Sepak Bola</mark> | Hari, Tanggal, Bulan</p>
-                        <p>Judul berita</p>
-                    </div>
-                </div>
+      <div class="row">
+        <div class="flex-container1">
+          <div class="flex-container1-gbr">
+            <a href="../FE-2-section-medan-group-26/bola1.html">
+              <img
+                class="flex-container2-gbr"
+                src="../FE-2-section-medan-group-26/assets/g7.jpg"
+              />
+            </a>
+            <div class="flex-container1-tulisan">
+              <p><mark>Sepak Bola</mark> | Hari, Tanggal, Bulan</p>
+              <p>Judul berita</p>
             </div>
-
-            <div class="flex-container2">
-                <div class="flex-container2-gbr">
-                    <a href="../FE-2-section-medan-group-26/bola2.html">
-                        <img class="flex-container2-gbr" src="../FE-2-section-medan-group-26/assets/g7.jpg">
-                    </a>
-                    <div class="flex-container2-tulisan">
-                        <p><mark>Sepak Bola</mark> | Hari, Tanggal, Bulan</p>
-                        <p>Judul berita</p>
-                    </div>
-                </div>
-                <div class="flex-container2-gbr">
-                    <a href="../FE-2-section-medan-group-26/bola3.html">
-                        <img class="flex-container2-gbr" src="../FE-2-section-medan-group-26/assets/g7.jpg">
-                    </a>
-                    <div class="flex-container2-tulisan">
-                        <p><mark>Sepak Bola</mark> | Hari, Tanggal, Bulan</p>
-                        <p>Judul berita</p>
-                    </div>
-                </div>
-                <div class="flex-container2-gbr">
-                    <a href="../FE-2-section-medan-group-26/bola3.html">
-                        <img class="flex-container2-gbr" src="../FE-2-section-medan-group-26/assets/g7.jpg">
-                    </a>
-                    <div class="flex-container2-tulisan">
-                        <p><mark>Sepak Bola</mark> | Hari, Tanggal, Bulan</p>
-                        <p>Judul berita</p>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+
+        <div class="flex-container2">
+          <div class="flex-container2-gbr">
+            <a href="../FE-2-section-medan-group-26/bola2.html">
+              <img
+                class="flex-container2-gbr"
+                src="../FE-2-section-medan-group-26/assets/g7.jpg"
+              />
+            </a>
+            <div class="flex-container2-tulisan">
+              <p><mark>Sepak Bola</mark> | Hari, Tanggal, Bulan</p>
+              <p>Judul berita</p>
+            </div>
+          </div>
+          <div class="flex-container2-gbr">
+            <a href="../FE-2-section-medan-group-26/bola3.html">
+              <img
+                class="flex-container2-gbr"
+                src="../FE-2-section-medan-group-26/assets/g7.jpg"
+              />
+            </a>
+            <div class="flex-container2-tulisan">
+              <p><mark>Sepak Bola</mark> | Hari, Tanggal, Bulan</p>
+              <p>Judul berita</p>
+            </div>
+          </div>
+          <div class="flex-container2-gbr">
+            <a href="../FE-2-section-medan-group-26/bola3.html">
+              <img
+                class="flex-container2-gbr"
+                src="../FE-2-section-medan-group-26/assets/g7.jpg"
+              />
+            </a>
+            <div class="flex-container2-tulisan">
+              <p><mark>Sepak Bola</mark> | Hari, Tanggal, Bulan</p>
+              <p>Judul berita</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </article>
 
     <!-- Tampilan Berita -->
-    <div class="newss2">
-        <nav>Bulu Tangkis</nav>
+    <div id="bulu-tangkis">
+      <nav>Bulu Tangkis</nav>
     </div>
 
     <article>
-        <div class="row1">
-            <div class="flex-container3">
-                <div class="flex-container3-gbr">
-                    <a href="../FE-2-section-medan-group-26/bola1.html">
-                        <img class="flex-container2-gbr" src="../FE-2-section-medan-group-26/assets/g9.jpg">
-                    </a>
-                    <div class="flex-container3-tulisan">
-                        <p><mark>Bulu Tangkis</mark> | Hari, Tanggal, Bulan</p>
-                        <p>Judul berita</p>
-                    </div>
-                </div>
+      <div class="row1">
+        <div class="flex-container3">
+          <div class="flex-container3-gbr">
+            <a href="../FE-2-section-medan-group-26/bola1.html">
+              <img
+                class="flex-container2-gbr"
+                src="../FE-2-section-medan-group-26/assets/g9.jpg"
+              />
+            </a>
+            <div class="flex-container3-tulisan">
+              <p><mark>Bulu Tangkis</mark> | Hari, Tanggal, Bulan</p>
+              <p>Judul berita</p>
             </div>
-
-            <div class="flex-container4">
-                <div class="flex-container4-gbr">
-                    <a href="../FE-2-section-medan-group-26/bola2.html">
-                        <img class="flex-container4-gbr" src="../FE-2-section-medan-group-26/assets/g9.jpg">
-                    </a>
-                    <div class="flex-container4-tulisan">
-                        <p><mark>Bulu Tangkis</mark> | Hari, Tanggal, Bulan</p>
-                        <p>Judul berita</p>
-                    </div>
-                </div>
-                <div class="flex-container4-gbr">
-                    <a href="../FE-2-section-medan-group-26/bola3.html">
-                        <img class="flex-container4-gbr" src="../FE-2-section-medan-group-26/assets/g9.jpg">
-                    </a>
-                    <div class="flex-container4-tulisan">
-                        <p><mark>Bulu Tangkis</mark> | Hari, Tanggal, Bulan</p>
-                        <p>Judul berita</p>
-                    </div>
-                </div>
-                <div class="flex-container4-gbr">
-                    <a href="../FE-2-section-medan-group-26/bola3.html">
-                        <img class="flex-container4-gbr" src="../FE-2-section-medan-group-26/assets/g9.jpg">
-                    </a>
-                    <div class="flex-container4-tulisan">
-                        <p><mark>Bulu Tangkis</mark> | Hari, Tanggal, Bulan</p>
-                        <p>Judul berita</p>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+
+        <div class="flex-container4">
+          <div class="flex-container4-gbr">
+            <a href="../FE-2-section-medan-group-26/bola2.html">
+              <img
+                class="flex-container4-gbr"
+                src="../FE-2-section-medan-group-26/assets/g9.jpg"
+              />
+            </a>
+            <div class="flex-container4-tulisan">
+              <p><mark>Bulu Tangkis</mark> | Hari, Tanggal, Bulan</p>
+              <p>Judul berita</p>
+            </div>
+          </div>
+          <div class="flex-container4-gbr">
+            <a href="../FE-2-section-medan-group-26/bola3.html">
+              <img
+                class="flex-container4-gbr"
+                src="../FE-2-section-medan-group-26/assets/g9.jpg"
+              />
+            </a>
+            <div class="flex-container4-tulisan">
+              <p><mark>Bulu Tangkis</mark> | Hari, Tanggal, Bulan</p>
+              <p>Judul berita</p>
+            </div>
+          </div>
+          <div class="flex-container4-gbr">
+            <a href="../FE-2-section-medan-group-26/bola3.html">
+              <img
+                class="flex-container4-gbr"
+                src="../FE-2-section-medan-group-26/assets/g9.jpg"
+              />
+            </a>
+            <div class="flex-container4-tulisan">
+              <p><mark>Bulu Tangkis</mark> | Hari, Tanggal, Bulan</p>
+              <p>Judul berita</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </article>
 
-    <div class="newss3">
-        <nav>Basket</nav>
+    <div id="basket">
+      <nav>Basket</nav>
     </div>
 
     <article>
-        <div class="row2">
-            <div class="flex-container5">
-                <div class="flex-container5-gbr">
-                    <a href="../FE-2-section-medan-group-26/bola1.html">
-                        <img class="flex-container5-gbr" src="../FE-2-section-medan-group-26/assets/g11.jpg">
-                    </a>
-                    <div class="flex-container5-tulisan">
-                        <p><mark>Basket</mark> | Hari, Tanggal, Bulan</p>
-                        <p>Judul berita</p>
-                    </div>
-                </div>
+      <div class="row2">
+        <div class="flex-container5">
+          <div class="flex-container5-gbr">
+            <a href="../FE-2-section-medan-group-26/bola1.html">
+              <img
+                class="flex-container5-gbr"
+                src="../FE-2-section-medan-group-26/assets/g11.jpg"
+              />
+            </a>
+            <div class="flex-container5-tulisan">
+              <p><mark>Basket</mark> | Hari, Tanggal, Bulan</p>
+              <p>Judul berita</p>
             </div>
-
-            <div class="flex-container6">
-                <div class="flex-container6-gbr">
-                    <a href="../FE-2-section-medan-group-26/bola2.html">
-                        <img class="flex-container6-gbr" src="../FE-2-section-medan-group-26/assets/g11.jpg">
-                    </a>
-                    <div class="flex-container6-tulisan">
-                        <p><mark>Basket</mark> | Hari, Tanggal, Bulan</p>
-                        <p>Judul berita</p>
-                    </div>
-                </div>
-                <div class="flex-container6-gbr">
-                    <a href="../FE-2-section-medan-group-26/bola3.html">
-                        <img class="flex-container6-gbr" src="../FE-2-section-medan-group-26/assets/g11.jpg">
-                    </a>
-                    <div class="flex-container6-tulisan">
-                        <p><mark>Basket</mark> | Hari, Tanggal, Bulan</p>
-                        <p>Judul berita</p>
-                    </div>
-                </div>
-                <div class="flex-container6-gbr">
-                    <a href="../FE-2-section-medan-group-26/bola3.html">
-                        <img class="flex-container6-gbr" src="../FE-2-section-medan-group-26/assets/g11.jpg">
-                    </a>
-                    <div class="flex-container6-tulisan">
-                        <p><mark>Basket</mark> | Hari, Tanggal, Bulan</p>
-                        <p>Judul berita</p>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+
+        <div class="flex-container6">
+          <div class="flex-container6-gbr">
+            <a href="../FE-2-section-medan-group-26/bola2.html">
+              <img
+                class="flex-container6-gbr"
+                src="../FE-2-section-medan-group-26/assets/g11.jpg"
+              />
+            </a>
+            <div class="flex-container6-tulisan">
+              <p><mark>Basket</mark> | Hari, Tanggal, Bulan</p>
+              <p>Judul berita</p>
+            </div>
+          </div>
+          <div class="flex-container6-gbr">
+            <a href="../FE-2-section-medan-group-26/bola3.html">
+              <img
+                class="flex-container6-gbr"
+                src="../FE-2-section-medan-group-26/assets/g11.jpg"
+              />
+            </a>
+            <div class="flex-container6-tulisan">
+              <p><mark>Basket</mark> | Hari, Tanggal, Bulan</p>
+              <p>Judul berita</p>
+            </div>
+          </div>
+          <div class="flex-container6-gbr">
+            <a href="../FE-2-section-medan-group-26/bola3.html">
+              <img
+                class="flex-container6-gbr"
+                src="../FE-2-section-medan-group-26/assets/g11.jpg"
+              />
+            </a>
+            <div class="flex-container6-tulisan">
+              <p><mark>Basket</mark> | Hari, Tanggal, Bulan</p>
+              <p>Judul berita</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </article>
 
     <footer>
-        <div class="footer1">
-            <img class="logo_foot" src="../FE-2-section-medan-group-26/assets/logo.svg" width="100%">
-            <h1>&copy; 2023 Section Medan-Group 26</h1>
-        </div>
-        <div class="arrow-up">
-            <a href="#">
-                <img src="../FE-2-section-medan-group-26/assets/chevron-up.svg" alt="">
-            </a>
-        </div>
+      <div class="footer1">
+        <img
+          class="logo_foot"
+          src="../FE-2-section-medan-group-26/assets/logo.svg"
+          footerwidth="100%"
+        />
+        <h1>&copy; 2023 Section Medan-Group 26</h1>
+      </div>
+      <div class="arrow-up">
+        <a href="#">
+          <img
+            src="../FE-2-section-medan-group-26/assets/chevron-up.svg"
+            alt=""
+          />
+        </a>
+      </div>
     </footer>
 
     <script src="../FE-2-section-medan-group-26/Javascript/script.js"></script>
-</body>
+  </body>
 </html>
