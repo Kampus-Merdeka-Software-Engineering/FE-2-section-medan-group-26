@@ -1,27 +1,23 @@
-/* CSS untuk konten artikel */
 article {
-  width: 80%; /* Lebar konten */
-  margin: 0 auto; /* Membuat konten berada di tengah */
+  width: 80%;
+  margin: 0 auto;
   padding: 20px;
-  text-align: center; /* Menengahkan teks */
+  text-align: center;
 }
 
-/* CSS untuk judul */
 .news1 h2 {
   color: #333;
   font-size: 30px;
   margin-bottom: 10px;
 }
 
-/* CSS untuk gambar */
 h3 img {
-  width: 70%; /* Gambar responsif */
+  width: 70%;
   height: auto;
   display: block;
-  margin: 0 auto; /* Memberikan jarak bawah */
+  margin: 0 auto;
 }
 
-/* CSS untuk paragraf */
 .news1 p {
   max-width: 100%;
   color: #666;
@@ -31,7 +27,6 @@ h3 img {
   text-align: justify;
 }
 
-/* CSS untuk kolom komentar */
 .comment-box {
   max-width: 80%;
   margin: 0 auto;
@@ -95,17 +90,16 @@ h3 img {
   border-radius: 3px;
 }
 
-/* Responsive */
 @media screen and (max-width: 700px) {
   article {
-    width: 90%; /* Mengurangi lebar konten pada layar kecil */
-    padding: 15px; /* Mengurangi padding pada layar kecil */
+    width: 90%;
+    padding: 15px;
   }
   .news1 p {
     font-size: 15px;
   }
   .news1 h2 {
-    font-size: 23px; /* Mengurangi ukuran font judul pada layar kecil */
+    font-size: 23px;
   }
   .comment-box h2 {
     font-size: 18px;
@@ -120,14 +114,14 @@ h3 img {
 
 @media screen and (min-width: 200px) and (max-width: 500px) {
   article {
-    width: 90%; /* Mengurangi lebar konten pada layar kecil */
-    padding: 5px; /* Mengurangi padding pada layar kecil */
+    width: 90%;
+    padding: 5px;
   }
   .news1 p {
     font-size: 12px;
   }
   .news1 h2 {
-    font-size: 18px; /* Mengurangi ukuran font judul pada layar kecil */
+    font-size: 18px;
   }
   .comment-box h2 {
     font-size: 15px;
