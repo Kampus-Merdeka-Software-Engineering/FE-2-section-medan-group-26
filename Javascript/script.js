@@ -1,4 +1,3 @@
-// untuk tombol bar reponsive
 const mobilemenu = document.querySelector(".mobile");
 const menuBtn = document.querySelector(".menuBtn");
 let menuBtnDisplay = true;
@@ -6,22 +5,19 @@ let menuBtnDisplay = true;
 menuBtn.addEventListener("click", function () {
   mobilemenu.classList.toggle("hidden");
 });
-// Ambil semua elemen yang merupakan tautan submenu
+
 const submenuLinks = document.querySelectorAll(
   ".mobile li:not(:first-child) a"
 );
 
-// Tambahkan event listener untuk setiap tautan submenu
 submenuLinks.forEach((link) => {
   link.addEventListener("click", function () {
     const mobileMenu = document.querySelector(".mobile");
 
-    // Sembunyikan menu dropdown saat submenu diklik
     mobileMenu.classList.add("hidden");
   });
 });
 
-// kode untuk arrow up footer
 document.querySelector(".arrow-up").addEventListener("click", function (e) {
   e.preventDefault();
   window.scrollTo({
@@ -29,8 +25,6 @@ document.querySelector(".arrow-up").addEventListener("click", function (e) {
     behavior: "smooth",
   });
 });
-
-// penggabungan
 
 const header = document.getElementById("navbar");
 const footer = document.getElementById("footer");
@@ -41,14 +35,11 @@ fetch("./navbar.html")
     navbar.innerHtml = result;
   });
 
-// Untuk kolom komentar
-// Select elements
 const submitButton = document.querySelector(".submit-comment");
 const commentInput = document.getElementById("comment-input");
 const commentList = document.querySelector(".comment-list");
 const usernameInput = document.getElementById("username");
 
-// Function to add comment
 function addComment() {
   const commentText = commentInput.value.trim();
   const username = usernameInput.value.trim();
@@ -62,7 +53,6 @@ function addComment() {
     li.classList.add("comment-item");
     commentList.appendChild(li);
 
-    // Clear the input fields
     commentInput.value = "";
     usernameInput.value = "";
   } else {
@@ -70,5 +60,4 @@ function addComment() {
   }
 }
 
-// Add event listener
 submitButton.addEventListener("click", addComment);
