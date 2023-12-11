@@ -146,27 +146,26 @@ main {
 /* CSS Berita Selengkapnya */
 .flex-container2 {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   margin-top: 30px;
   gap: 30px;
-  margin-left: 20px;
+  margin-left: 25px;
 }
 
 .flex-container2 .flex-container2-tulisan {
   font-size: 15px;
-  display: flex;
   flex-direction: column;
-  margin-top: 0px;
-  line-height: 0px;
+  justify-content: center;
+  margin-top: -7px;
 }
 
 .flex-container2-gbr {
-  width: 90%;
+  width: 100%;
   align-items: start;
 }
 
 .flex-container1-gbr {
-  width: 90%;
+  width: 100%;
   align-items: start;
 }
 
@@ -175,7 +174,6 @@ main {
   flex-direction: row;
   margin-top: 30px;
   width: 100%;
-  margin-left: 20px;
 }
 
 .flex-container1 .flex-container1-tulisan {
@@ -204,9 +202,13 @@ main {
 
   .flex-container1 {
     width: 100%;
+    flex-direction: row;
+
   }
   .flex-container2 {
     width: 100%;
+    flex-direction: column;
+    margin-left: -2px;
   }
 }
 
@@ -246,27 +248,25 @@ main {
 /* CSS Berita Bulu Tangkis Selengkapnya */
 .flex-container4 {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   margin-top: 30px;
   gap: 30px;
-  margin-left: 20px;
 }
 
 .flex-container4 .flex-container4-tulisan {
   font-size: 15px;
-  display: flex;
   flex-direction: column;
-  margin-top: 0px;
-  line-height: 0px;
+  justify-content: center;
+  margin-top: -7px;
 }
 
 .flex-container4-gbr {
-  width: 90%;
+  width: 100%;
   align-items: start;
 }
 
 .flex-container3-gbr {
-  width: 90%;
+  width: 93%;
   align-items: start;
 }
 
@@ -280,10 +280,9 @@ main {
 
 .flex-container3 .flex-container3-tulisan {
   font-size: 15px;
-  display: flex;
   flex-direction: column;
-  margin-top: 0px;
-  line-height: 0px;
+  justify-content: center;
+  margin-top: -7px;
 }
 
 .row1 {
@@ -299,14 +298,18 @@ main {
   .row1 {
     display: flex;
     flex-direction: column;
-    padding-left: 15px;
+    /* padding-left: 15px; */
   }
 
   .flex-container3 {
     width: 100%;
+    flex-direction: row;
   }
+
   .flex-container4 {
-    width: 100%;
+    width: 90%;
+    flex-direction: column;
+    margin-left: 20px;
   }
 }
 
@@ -345,27 +348,24 @@ main {
 /* CSS Berita Bulu Tangkis Selengkapnya */
 .flex-container6 {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   margin-top: 30px;
   gap: 30px;
-  margin-left: 20px;
 }
 
 .flex-container6 .flex-container6-tulisan {
   font-size: 15px;
-  display: flex;
   flex-direction: column;
-  margin-top: 0px;
-  line-height: 0px;
+  justify-content: center;
 }
 
 .flex-container6-gbr {
-  width: 90%;
+  width: 100%;
   align-items: start;
 }
 
 .flex-container5-gbr {
-  width: 90%;
+  width: 95%;
   align-items: start;
 }
 
@@ -379,10 +379,8 @@ main {
 
 .flex-container5 .flex-container5-tulisan {
   font-size: 15px;
-  display: flex;
   flex-direction: column;
-  margin-top: 0px;
-  line-height: 0px;
+  justify-content: center;
 }
 
 .row2 {
@@ -398,13 +396,15 @@ main {
   .row2 {
     display: flex;
     flex-direction: column;
-    padding-left: 15px;
   }
 
   .flex-container5 {
     width: 100%;
+    flex-direction: row;
   }
   .flex-container6 {
-    width: 100%;
+    width: 90%;
+    flex-direction: column;
+    margin-left: 20px;
   }
 }
